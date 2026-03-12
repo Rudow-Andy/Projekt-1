@@ -1,0 +1,162 @@
+{
+  "brand": {
+    "title": "PUBLIC SECTOR DAILY",
+    "subtitle": "Business Intelligence Briefing"
+  },
+  "prepared_for": "Business Development Team",
+  "territory": [
+    "Germany Public Sector"
+  ],
+  "briefing_mode": "compact",
+  "lookback_hours": 72,
+  "accounts": [
+    {
+      "name": "FITKO (IT-Planungsrat)",
+      "active_projects_seed": [
+        "Digitaler Marktplatz",
+        "FIT-Connect",
+        "OZG 2.0 coordination"
+      ],
+      "contact_roles_seed": [
+        "President / Director",
+        "Programme leads",
+        "Procurement lead",
+        "CISO / security lead"
+      ]
+    },
+    {
+      "name": "BVA (Bundesverwaltungsamt)",
+      "active_projects_seed": [
+        "Shared services consolidation",
+        "Identity / IAM programmes",
+        "Register / portal modernisation"
+      ],
+      "contact_roles_seed": [
+        "President / Directorate",
+        "CIO / IT leadership",
+        "Head of shared services",
+        "Security lead"
+      ]
+    },
+    {
+      "name": "Freistaat Sachsen",
+      "active_projects_seed": [
+        "SID initiatives",
+        "Cloud migration",
+        "AI pilots",
+        "Sachsen.digital programmes"
+      ],
+      "contact_roles_seed": [
+        "State CIO/CDO",
+        "SID leadership",
+        "Ministry digital leads",
+        "CISO / IT security"
+      ]
+    },
+    {
+      "name": "Sachsen-Anhalt",
+      "active_projects_seed": [
+        "OZG implementation",
+        "Infrastructure modernisation",
+        "Shared services",
+        "Cyber programmes"
+      ],
+      "contact_roles_seed": [
+        "Ministry leadership",
+        "State CIO/CDO",
+        "IT service provider leadership",
+        "Procurement"
+      ]
+    },
+    {
+      "name": "Freistaat Thüringen",
+      "active_projects_seed": [
+        "Public Money–Public Code",
+        "Open source strategy",
+        "Sovereign cloud"
+      ],
+      "contact_roles_seed": [
+        "State CIO/CDO",
+        "Digital ministry leadership",
+        "Open source lead",
+        "Security lead"
+      ]
+    },
+    {
+      "name": "Niedersachsen",
+      "active_projects_seed": [
+        "IT.Niedersachsen shared services",
+        "Cloud strategy",
+        "Municipal digital support"
+      ],
+      "contact_roles_seed": [
+        "State CIO/CDO",
+        "IT.Niedersachsen leadership",
+        "Shared services lead",
+        "Procurement"
+      ]
+    }
+  ],
+  "regulatory_items": [
+    {
+      "name": "EU AI Act — full applicability",
+      "date": "2026-08-02",
+      "notes": "AI Act is fully applicable 2 Aug 2026; prohibited practices + AI literacy obligations apply from 2 Feb 2025; GPAI obligations apply from 2 Aug 2025; some high-risk AI in regulated products have an extended transition until 2 Aug 2027. (Verify each item in sources.)"
+    }
+  ],
+  "themes": [
+    {
+      "name": "Digital Sovereignty",
+      "seed": [
+        "Deutschland-Stack → procurement reality",
+        "data residency, exit strategies, sovereign cloud options"
+      ]
+    },
+    {
+      "name": "AI Governance & Compliance",
+      "seed": [
+        "AI inventory, risk classification, training/AI literacy, FRIA for high-risk deployments where applicable"
+      ]
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "seed": [
+        "FinOps, cost governance, multi-cloud operating model, platform engineering"
+      ]
+    }
+  ],
+  "email": {
+    "subject_prefix": "Public Sector Daily"
+  },
+  "model": {
+    "preferred_models": [
+      "gemini-2.5-flash",
+      "gemini-2.0-flash",
+      "gemini-2.5-flash-lite"
+    ],
+    "max_output_tokens": 3000,
+    "temperature": 0.3,
+    "brevity": {
+      "target_words": [
+        900,
+        1200
+      ],
+      "max_words": 1300,
+      "section_word_limits": {
+        "top_priority": 80,
+        "signal": 120,
+        "regulatory_countdown": 220
+      }
+    }
+  },
+  "entity_coverage": {
+    "entity_universe_path": "entity_universe.json",
+    "spotlight_entities_per_day": 5,
+    "always_include": [
+      "FITKO (IT-Planungsrat)",
+      "BVA (Bundesverwaltungsamt)",
+      "Staatsbetrieb Sächsische Informatik Dienste (SID)",
+      "IT.Niedersachsen"
+    ]
+  }
+}
